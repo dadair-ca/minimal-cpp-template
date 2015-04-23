@@ -5,9 +5,10 @@ This is a minimal project template that should build and run out of
 the box, that includes automated testing using Google Test. For any
 small project, all you need to do is change __src/main.cpp__, and add
 any new files (__.cc__ and __.h__) in __src/__. To test these new
-files/functions, change the __SRCS__ list in __test/CMakeLists.txt__
-and add a new file in __tests/__. See __tests/sanity_check.cc__ for an
-example of writing a test.
+files/functions, change the __test_SRCS__ list in
+__test/CMakeLists.txt__ (line 14) and add a new file in
+__tests/__. See __test/sanity_check.cc__ for an example of writing a
+test.
 
 To build your project, do the following:
 
@@ -18,7 +19,7 @@ To build your project, do the following:
 __please note that the build will fail if the tests fail__
 
 To change the name of the executable from __projectname__, change the
-__project(..)__ target in __CMakeLists.txt__.
+__PROJECT(..)__ (line 7) target in __CMakeLists.txt__.
 
  1. Prerequisites
  2. Building
